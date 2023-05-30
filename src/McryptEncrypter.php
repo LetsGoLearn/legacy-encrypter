@@ -211,4 +211,14 @@ class McryptEncrypter extends BaseEncrypter implements EncrypterContract
 
         return MCRYPT_RAND;
     }
+    
+    /**
+     * Get the encryption key that the encrypter is currently using.
+     *
+     * @return string
+     */
+    public function getKey()
+    {
+        return $this->key;
+    }
 }
